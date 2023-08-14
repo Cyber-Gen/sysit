@@ -1,5 +1,5 @@
 import click
-from sysit.commands.cli import cli
+from tools.commands.cli import cli
 # from sysit.common_imports import *
 
 def main():

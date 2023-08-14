@@ -1,4 +1,4 @@
-from sysit.common_imports import *
+from tools.common_imports import *
 
 
 os_type = None
@@ -9,17 +9,17 @@ def check_os():
     print("Windows OS detected")
     #let's make sure the if the OS is windows, the os_type variable is set to "windows" and can be used in other functions and modules.
     os_type = "windows"
-    import sysit.os_windows
+    import tools.os_windows
     
   elif platform.system() == "Linux":
     print("Linux OS detected")
     os_type = "linux"
-    import sysit.os_linux
+    import tools.os_linux
     
   elif platform.system() == "Darwin": 
     print("MacOS detected")
     os_type = "macos"
-    import sysit.os_macos
+    import tools.os_macos
   else:
     print("OS is not supported") 
     sys.exit(1)

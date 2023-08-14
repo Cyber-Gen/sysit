@@ -1,8 +1,8 @@
 import click
-from sysit.os_linux import *
-from sysit.os_windows import *
-from sysit.os_macos import *
-from sysit.sys_checks import check_os, check_dns_config, check_ping, check_ip, check_dns_config
+from tools.os_linux import *
+from tools.os_windows import *
+from tools.os_macos import *
+from tools.sys_checks import check_os, check_dns_config, check_ping, check_ip, check_dns_config
 
 @click.group()
 def cli():
