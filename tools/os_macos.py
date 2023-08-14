@@ -1,4 +1,4 @@
-from sysit.common_imports import *
+from tools.common_imports import *
 
 #lets create a function to update and upgrade macos
 def update_upgrade_macos():
