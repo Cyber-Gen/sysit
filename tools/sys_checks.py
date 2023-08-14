@@ -26,12 +26,9 @@ def check_os():
   
   return os_type
 
-#lets define function that checks network status, public IP, system's dns resolver.
+#some basic functions checks network status, public IP, system's dns resolver.
 def check_ping():
     
-    # print("Testing network status")
-    # print("Testing...")
-    time.sleep(2)
     #if ping is successful, it will return 0. if not, it will return 1.
     if subprocess.call(['ping', '-c', '3', 'google.com']) == 0:
         print("\nPing test is successful.")
@@ -44,9 +41,6 @@ def check_ping():
 
 def check_ip():
     
-    # print("Checking public IP address")
-    # print("Checking...")
-    time.sleep(2)
     #if curl is successful, it will return 0. if not, it will return 1.
     if subprocess.call(['curl', 'ifconfig.me']) == 0:
         print("\nPublic IP test is successful.")
@@ -58,9 +52,6 @@ def check_ip():
 
 def check_dns_config():
     
-    # print("Checking system's DNS resolver configuration")
-    # print("Checking...")
-    time.sleep(2)
     #test this only if the OS is linux or macos
     if os_type == "linux" or "macos":
         if subprocess.call(['cat', '/etc/resolv.conf']) == 0:
@@ -78,9 +69,6 @@ def check_dns_config():
 
 def check_dns():
 
-    # print("Testing DNS resolver")
-    # print("Testing...")
-    time.sleep(2)
     #if nslookup is successful, it will return 0. if not, it will return 1.
     if subprocess.call(['nslookup', 'google.com']) == 0:
         print("\nDNS resolver test is successful.")
