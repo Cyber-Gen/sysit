@@ -1,6 +1,6 @@
 from tools.common_imports import *
 
-#lets create a function to update windows OS invoking powershell
+#function to update windows OS invoking powershell
 def update_upgrade_windows():
     print("Updating and upgrading windows OS")
     print("Updating...")
@@ -9,7 +9,7 @@ def update_upgrade_windows():
     print("Done")
     print("")
 
-#lets create a function to install latest chocolatey version on windows OS
+#function to install latest chocolatey version on windows OS
 def install_chocolatey_windows():
     print("Installing chocolatey for windows OS")
     print("Installing...")

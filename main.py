@@ -1,6 +1,5 @@
 import click
 from tools.commands.cli import cli
-# from sysit.common_imports import *
 
 def main():
     """Main entry point for the application script"""

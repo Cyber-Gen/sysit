@@ -1,6 +1,6 @@
 from tools.common_imports import *
 
-#lets create a function to update and upgrade macos
+#function to update and upgrade macos
 def update_upgrade_macos():
     print("Updating and upgrading macos")
     print("Updating...")
@@ -14,7 +14,7 @@ def update_upgrade_macos():
         print("\n OS update failed.")
         sys.exit(1)
 
-#lets create a function to install homebrew on macos
+#function to install homebrew on macos
 def install_homebrew_macos():
     print("Installing homebrew on macos")
     print("Installing...")
@@ -23,7 +23,7 @@ def install_homebrew_macos():
     print("Done")
     print("")
 
-#lets create a function to update all applications on macos
+#function to update all applications on macos
 def update_upgrade_applications_macos():
     print("Updating and upgrading applications on macos")
     print("Updating...")
